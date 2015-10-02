@@ -1,0 +1,71 @@
+\hypertarget{classBoard}{}\section{Board Class Reference}
+\label{classBoard}\index{Board@{Board}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBoard_a1291ca893864123e2a144ce5e4d8beb3}{Board} (int height, int width)
+\item 
+void \hyperlink{classBoard_a07010bc149d198961c4669cec2ca4905}{draw} (ostream $\ast$o)
+\item 
+void \hyperlink{classBoard_ab96f988bdac00e84aa3ae9995e16921c}{place\+Piece} (\hyperlink{classPiece}{Piece} $\ast$p, \hyperlink{classSquare}{Square} $\ast$s)
+\item 
+void \hyperlink{classBoard_a71bbcd990439137e81b14ab229787daa}{move\+Piece} (\hyperlink{classSquare}{Square} $\ast$s, \hyperlink{classSquare}{Square} $\ast$d)
+\item 
+\hypertarget{classBoard_afa30630891e15327329bd1fb62de3484}{}\hyperlink{classSquare}{Square} $\ast$ {\bfseries get\+Square} (int r, int c)\label{classBoard_afa30630891e15327329bd1fb62de3484}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBoard_aa0cb8de0254520dc08dab5796643c8e5}{}int {\bfseries height}\label{classBoard_aa0cb8de0254520dc08dab5796643c8e5}
+
+\item 
+\hypertarget{classBoard_a90a8efaa4736af25511ac948bdd27d6c}{}int {\bfseries width}\label{classBoard_a90a8efaa4736af25511ac948bdd27d6c}
+
+\item 
+\hypertarget{classBoard_a7a0a34a623e8fd5e350fdb31bd10f182}{}vector$<$ \hyperlink{classSquare}{Square} $\ast$ $>$ {\bfseries squares}\label{classBoard_a7a0a34a623e8fd5e350fdb31bd10f182}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBoard_a1291ca893864123e2a144ce5e4d8beb3}{}\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection[{Board(int height, int width)}]{\setlength{\rightskip}{0pt plus 5cm}Board\+::\+Board (
+\begin{DoxyParamCaption}
+\item[{int}]{height, }
+\item[{int}]{width}
+\end{DoxyParamCaption}
+)}\label{classBoard_a1291ca893864123e2a144ce5e4d8beb3}
+Constructor\+: takes two parameters – width and height – for specifying the size of the board. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBoard_a07010bc149d198961c4669cec2ca4905}{}\index{Board@{Board}!draw@{draw}}
+\index{draw@{draw}!Board@{Board}}
+\subsubsection[{draw(ostream $\ast$o)}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::draw (
+\begin{DoxyParamCaption}
+\item[{ostream $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\label{classBoard_a07010bc149d198961c4669cec2ca4905}
+Draws the board to an output stream \hypertarget{classBoard_a71bbcd990439137e81b14ab229787daa}{}\index{Board@{Board}!move\+Piece@{move\+Piece}}
+\index{move\+Piece@{move\+Piece}!Board@{Board}}
+\subsubsection[{move\+Piece(\+Square $\ast$s, Square $\ast$d)}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::move\+Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Square} $\ast$}]{s, }
+\item[{{\bf Square} $\ast$}]{d}
+\end{DoxyParamCaption}
+)}\label{classBoard_a71bbcd990439137e81b14ab229787daa}
+Moves the \hyperlink{classPiece}{Piece} on \hyperlink{classSquare}{Square} s to \hyperlink{classSquare}{Square} d \hypertarget{classBoard_ab96f988bdac00e84aa3ae9995e16921c}{}\index{Board@{Board}!place\+Piece@{place\+Piece}}
+\index{place\+Piece@{place\+Piece}!Board@{Board}}
+\subsubsection[{place\+Piece(\+Piece $\ast$p, Square $\ast$s)}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::place\+Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece} $\ast$}]{p, }
+\item[{{\bf Square} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\label{classBoard_ab96f988bdac00e84aa3ae9995e16921c}
+Places a \hyperlink{classPiece}{Piece} on a \hyperlink{classSquare}{Square} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Board.\+h\item 
+Board.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{classChess}{}\section{Chess Class Reference}
+\label{classChess}\index{Chess@{Chess}}
+Inheritance diagram for Chess\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classChess}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classChess_a8b493f742d0ceced6f853fa30d3c05a8}{Chess} ()
+\item 
+void \hyperlink{classChess_a9722d5c13c442eae33ca17792996213a}{setup} ()
+\item 
+bool \hyperlink{classChess_ac85e41b8580d3300185bd2bc264ec6d8}{is\+Over} ()
+\item 
+\hyperlink{classSquare}{Square} $\ast$ \hyperlink{classChess_a8266d0da94f72df7991799790915e38b}{get\+Square} (istream \&is)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classChess_a8b493f742d0ceced6f853fa30d3c05a8}{}\index{Chess@{Chess}!Chess@{Chess}}
+\index{Chess@{Chess}!Chess@{Chess}}
+\subsubsection[{Chess()}]{\setlength{\rightskip}{0pt plus 5cm}Chess\+::\+Chess (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classChess_a8b493f742d0ceced6f853fa30d3c05a8}
+Constructor\+: Creates a 6x6 chess board and the pieces. alternative maybe char char\+Pieces \mbox{[}\mbox{]} = \{\textquotesingle{}r\textquotesingle{},\textquotesingle{}b\textquotesingle{},\textquotesingle{}k\textquotesingle{},\textquotesingle{}q\textquotesingle{},\textquotesingle{}b\textquotesingle{},\textquotesingle{}r\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{}\}; pieces(char\+Pieces, char\+Pieces + sizeof(char\+Pieces) / sizeof(char));
+
+\subsection{Member Function Documentation}
+\hypertarget{classChess_a8266d0da94f72df7991799790915e38b}{}\index{Chess@{Chess}!get\+Square@{get\+Square}}
+\index{get\+Square@{get\+Square}!Chess@{Chess}}
+\subsubsection[{get\+Square(istream \&is)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Square} $\ast$ Chess\+::get\+Square (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{is}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classChess_a8266d0da94f72df7991799790915e38b}
+Reads the row and column for a location on the board. The row and column values are separated by a space on one line. 
+
+Implements \hyperlink{classGame_a36fc5e6874822115ff6685c608da50db}{Game}.
+
+\hypertarget{classChess_ac85e41b8580d3300185bd2bc264ec6d8}{}\index{Chess@{Chess}!is\+Over@{is\+Over}}
+\index{is\+Over@{is\+Over}!Chess@{Chess}}
+\subsubsection[{is\+Over()}]{\setlength{\rightskip}{0pt plus 5cm}bool Chess\+::is\+Over (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classChess_ac85e41b8580d3300185bd2bc264ec6d8}
+Overrides the \hyperlink{classChess_ac85e41b8580d3300185bd2bc264ec6d8}{is\+Over()} function from \hyperlink{classGame}{Game} to indicate that the game ends when one of the King pieces is taken. 
+
+Implements \hyperlink{classGame_ae3f5006e677b713fa7f85d906cde3dde}{Game}.
+
+\hypertarget{classChess_a9722d5c13c442eae33ca17792996213a}{}\index{Chess@{Chess}!setup@{setup}}
+\index{setup@{setup}!Chess@{Chess}}
+\subsubsection[{setup()}]{\setlength{\rightskip}{0pt plus 5cm}void Chess\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classChess_a9722d5c13c442eae33ca17792996213a}
+Overrides the \hyperlink{classChess_a9722d5c13c442eae33ca17792996213a}{setup()} function from \hyperlink{classGame}{Game} to populate the board with the pieces. 
+
+Implements \hyperlink{classGame_a49067dcf360cfe353b9a99910136ac26}{Game}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Chess.\+h\item 
+Chess.\+cpp\end{DoxyCompactItemize}
