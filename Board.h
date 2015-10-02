@@ -5,7 +5,6 @@
 #ifndef Board_h
 #define Board_h
 
-#include "Chess.h"
 #include "Piece.h"
 #include "Square.h"
 #include <iostream>
@@ -25,7 +24,7 @@ class Board {
     /**
      * Draws the board to an output stream
      */
-    void draw(ostream* o);
+    void draw(ostream &o);
 
     /**
      * Places a Piece on a Square

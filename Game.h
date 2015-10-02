@@ -5,6 +5,7 @@
 #ifndef Game_h
 #define Game_h
 
+#include "Board.h"
 #include "Square.h"
 #include <iostream>
 

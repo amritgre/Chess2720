@@ -12,33 +12,33 @@ Chess::Chess()
 	 * char charPieces [] = {'r','b','k','q','b','r','p','p','p','p','p','p'};
 	 * pieces(charPieces, charPieces + sizeof(charPieces) / sizeof(char));
 	 */
-	pieces.push_back(new Piece('white', 'r'));
-	pieces.push_back(new Piece('white', 'b'));
-	pieces.push_back(new Piece('white', 'k'));
-	pieces.push_back(new Piece('white', 'q'));
-	pieces.push_back(new Piece('white', 'b'));
-	pieces.push_back(new Piece('white', 'r'));
-	pieces.push_back(new Piece('white', 'p'));
-	pieces.push_back(new Piece('white', 'p'));
-	pieces.push_back(new Piece('white', 'p'));
-	pieces.push_back(new Piece('white', 'p'));
-	pieces.push_back(new Piece('white', 'p'));
-	pieces.push_back(new Piece('white', 'p'));
+	pieces.push_back(new Piece("white", 'r'));
+	pieces.push_back(new Piece("white", 'b'));
+	pieces.push_back(new Piece("white", 'k'));
+	pieces.push_back(new Piece("white", 'q'));
+	pieces.push_back(new Piece("white", 'b'));
+	pieces.push_back(new Piece("white", 'r'));
+	pieces.push_back(new Piece("white", 'p'));
+	pieces.push_back(new Piece("white", 'p'));
+	pieces.push_back(new Piece("white", 'p'));
+	pieces.push_back(new Piece("white", 'p'));
+	pieces.push_back(new Piece("white", 'p'));
+	pieces.push_back(new Piece("white", 'p'));
 
 
 	//setup black pieces
-	pieces.push_back(new Piece('black', 'P'));
-	pieces.push_back(new Piece('black', 'P'));
-	pieces.push_back(new Piece('black', 'P'));
-	pieces.push_back(new Piece('black', 'P'));
-	pieces.push_back(new Piece('black', 'P'));
-	pieces.push_back(new Piece('black', 'P'));
-	pieces.push_back(new Piece('black', 'R'));
-	pieces.push_back(new Piece('black', 'B'));
-	pieces.push_back(new Piece('black', 'K'));
-	pieces.push_back(new Piece('black', 'Q'));
-	pieces.push_back(new Piece('black', 'B'));
-	pieces.push_back(new Piece('black', 'R'));
+	pieces.push_back(new Piece("black", 'P'));
+	pieces.push_back(new Piece("black", 'P'));
+	pieces.push_back(new Piece("black", 'P'));
+	pieces.push_back(new Piece("black", 'P'));
+	pieces.push_back(new Piece("black", 'P'));
+	pieces.push_back(new Piece("black", 'P'));
+	pieces.push_back(new Piece("black", 'R'));
+	pieces.push_back(new Piece("black", 'B'));
+	pieces.push_back(new Piece("black", 'K'));
+	pieces.push_back(new Piece("black", 'Q'));
+	pieces.push_back(new Piece("black", 'B'));
+	pieces.push_back(new Piece("black", 'R'));
 
 
 
@@ -81,7 +81,7 @@ bool Chess::isOver() const
     return over;
 }
 
-Square* Chess::getSquare(istream &is)
+Square* Chess::getSquare(istream const &is)
 {
 	//TODO: DO NOT output prompts here
 //	string row;
@@ -97,6 +97,8 @@ Square* Chess::getSquare(istream &is)
 
 }
 
-Chess::~~Chess(){
-	delete[] pieces;
+Chess::~Chess(){
+	for(int i = 0; i < pieces.size(); i++){
+		delete pieces[i];
+	}
 }

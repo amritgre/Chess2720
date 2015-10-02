@@ -35,7 +35,6 @@ class Piece {
     string colour;
     char symbol;//For example: 'q' for queen and 'p' for pawn. Lowercase = white pieces & Upper case = black pieces
     bool alive;
-
 };
 
 #endif // Piece_h

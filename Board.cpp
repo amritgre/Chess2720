@@ -13,7 +13,7 @@ Board::Board(int height, int width)
 		}
     }
 }
-void Board::draw(ostream* o)
+void Board::draw(ostream &o)
 
 {
     for (int row = 0; row < this -> height; row++) {
@@ -50,7 +50,7 @@ Square* Board::getSquare(int r, int c)
 }
 
 Board::~Board(){
-	delete[] squares;
-	delete width;
-	delete height;
+	for(int i = 0; i < squares.size(); i++){
+		delete squares[i];
+	}
 }
