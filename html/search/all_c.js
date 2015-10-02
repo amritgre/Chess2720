@@ -6,5 +6,5 @@ var searchData=
   ['square_2ecpp',['Square.cpp',['../Square_8cpp.html',1,'']]],
   ['square_2eh',['Square.h',['../Square_8h.html',1,'']]],
   ['squares',['squares',['../classBoard.html#a7a0a34a623e8fd5e350fdb31bd10f182',1,'Board']]],
-  ['symbol',['symbol',['../classPiece.html#a00143ae55b69981ae484cc7521b6d81a',1,'Piece::symbol()'],['../classSquare.html#a3b726fee24c8f3d56b10520227ba003e',1,'Square::symbol()']]]
+  ['symbol',['symbol',['../classPiece.html#a00143ae55b69981ae484cc7521b6d81a',1,'Piece::symbol()'],['../classSquare.html#aadadc7c924a6f07fd13d271118e65a16',1,'Square::symbol()']]]
 ];

@@ -22,7 +22,7 @@ class Piece {
 	/**
 	 * Returns true if the piece is still active on the board, false otherwise
 	 */
-    bool isAlive();
+    bool isAlive() const;
 
     /**
      * sets the piece to be inactive on the board

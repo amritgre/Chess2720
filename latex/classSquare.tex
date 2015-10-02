@@ -14,13 +14,15 @@
 \item 
 \hyperlink{classSquare_a2fafe3d65a3b4166f1fe8b6540db2199}{Square} (int \hyperlink{classSquare_aa353950a9ef437401db55ae605b0f8b9}{row}, int \hyperlink{classSquare_a08d4af37ead0391bec8f9cbaff083da0}{col})
 \item 
-char \hyperlink{classSquare_a3b726fee24c8f3d56b10520227ba003e}{symbol} ()
+char \hyperlink{classSquare_aadadc7c924a6f07fd13d271118e65a16}{symbol} () const 
 \item 
 void \hyperlink{classSquare_a7cf9aa874fea67f6a9056cad15752ab2}{set\+Piece} (\hyperlink{classPiece}{Piece} $\ast$p)
 \item 
-\hyperlink{classPiece}{Piece} $\ast$ \hyperlink{classSquare_a94d3716814970130772e0f93f9c6f5c1}{get\+Piece} ()
+\hyperlink{classPiece}{Piece} $\ast$ \hyperlink{classSquare_ab5b0c359853874b38c17bbe0b3f6aadf}{get\+Piece} () const 
 \item 
 \hyperlink{classPiece}{Piece} $\ast$ \hyperlink{classSquare_a21ec1e5b9fb287c33f911ef032443503}{remove\+Piece} ()
+\item 
+\hyperlink{classSquare_a90af7ce1060cff7b717ceddb333846b8}{$\sim$\+Square} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -50,16 +52,23 @@ int \hyperlink{classSquare_a08d4af37ead0391bec8f9cbaff083da0}{col}
 \item[{int}]{col}
 \end{DoxyParamCaption}
 )}\label{classSquare_a2fafe3d65a3b4166f1fe8b6540db2199}
-Constructor\+: takes two parameters – row and column – for specifying the location of the square on the board. 
-
-\subsection{Member Function Documentation}
-\hypertarget{classSquare_a94d3716814970130772e0f93f9c6f5c1}{}\index{Square@{Square}!get\+Piece@{get\+Piece}}
-\index{get\+Piece@{get\+Piece}!Square@{Square}}
-\subsubsection[{get\+Piece()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} $\ast$ Square\+::get\+Piece (
+Constructor\+: takes two parameters – row and column – for specifying the location of the square on the board. \hypertarget{classSquare_a90af7ce1060cff7b717ceddb333846b8}{}\index{Square@{Square}!````~Square@{$\sim$\+Square}}
+\index{````~Square@{$\sim$\+Square}!Square@{Square}}
+\subsubsection[{$\sim$\+Square()}]{\setlength{\rightskip}{0pt plus 5cm}Square\+::$\sim$\+Square (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classSquare_a94d3716814970130772e0f93f9c6f5c1}
+)}\label{classSquare_a90af7ce1060cff7b717ceddb333846b8}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSquare_ab5b0c359853874b38c17bbe0b3f6aadf}{}\index{Square@{Square}!get\+Piece@{get\+Piece}}
+\index{get\+Piece@{get\+Piece}!Square@{Square}}
+\subsubsection[{get\+Piece() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} $\ast$ Square\+::get\+Piece (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classSquare_ab5b0c359853874b38c17bbe0b3f6aadf}
 Returns the piece on the square, if it exists, otherwise returns N\+U\+L\+L; \hypertarget{classSquare_a21ec1e5b9fb287c33f911ef032443503}{}\index{Square@{Square}!remove\+Piece@{remove\+Piece}}
 \index{remove\+Piece@{remove\+Piece}!Square@{Square}}
 \subsubsection[{remove\+Piece()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} $\ast$ Square\+::remove\+Piece (
@@ -74,13 +83,13 @@ Removes a piece from a square and returns it, if it exists. \hypertarget{classSq
 \item[{{\bf Piece} $\ast$}]{p}
 \end{DoxyParamCaption}
 )}\label{classSquare_a7cf9aa874fea67f6a9056cad15752ab2}
-Sets a piece on the square \hypertarget{classSquare_a3b726fee24c8f3d56b10520227ba003e}{}\index{Square@{Square}!symbol@{symbol}}
+Sets a piece on the square \hypertarget{classSquare_aadadc7c924a6f07fd13d271118e65a16}{}\index{Square@{Square}!symbol@{symbol}}
 \index{symbol@{symbol}!Square@{Square}}
-\subsubsection[{symbol()}]{\setlength{\rightskip}{0pt plus 5cm}char Square\+::symbol (
+\subsubsection[{symbol() const }]{\setlength{\rightskip}{0pt plus 5cm}char Square\+::symbol (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classSquare_a3b726fee24c8f3d56b10520227ba003e}
+) const}\label{classSquare_aadadc7c924a6f07fd13d271118e65a16}
 Returns the symbol of the piece on the square, or a symbol indicating an empty square (“.\+”). 
 
 \subsection{Member Data Documentation}

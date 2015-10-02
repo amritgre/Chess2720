@@ -14,7 +14,7 @@ Piece::Piece(string colour, char symbol)
 	this->alive = true;
 }
 
-bool Piece::isAlive()
+bool Piece::isAlive() const
 {
     return alive;
 }

@@ -17,9 +17,11 @@ Inheritance diagram for Chess\+:\begin{figure}[H]
 \item 
 void \hyperlink{classChess_a9722d5c13c442eae33ca17792996213a}{setup} ()
 \item 
-bool \hyperlink{classChess_ac85e41b8580d3300185bd2bc264ec6d8}{is\+Over} ()
+bool \hyperlink{classChess_a62b09f4b86c385c8042b8c7e192e10e5}{is\+Over} () const 
 \item 
-\hyperlink{classSquare}{Square} $\ast$ \hyperlink{classChess_a8266d0da94f72df7991799790915e38b}{get\+Square} (istream \&is)
+\hyperlink{classSquare}{Square} $\ast$ \hyperlink{classChess_a48b59dcf880ff97114b8c5a3989b0364}{get\+Square} (istream const \&is)
+\item 
+\hyperlink{classChess_aa9717ab5263bc4fbb844e78bbe5587a8}{$\sim$\+Chess} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -37,30 +39,42 @@ vector$<$ \hyperlink{classPiece}{Piece} $\ast$ $>$ \hyperlink{classChess_af1095b
 {}
 \end{DoxyParamCaption}
 )}\label{classChess_a8b493f742d0ceced6f853fa30d3c05a8}
-Constructor\+: Creates a 6x6 chess board and the pieces. alternative maybe char char\+Pieces \mbox{[}\mbox{]} = \{\textquotesingle{}r\textquotesingle{},\textquotesingle{}b\textquotesingle{},\textquotesingle{}k\textquotesingle{},\textquotesingle{}q\textquotesingle{},\textquotesingle{}b\textquotesingle{},\textquotesingle{}r\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{}\}; pieces(char\+Pieces, char\+Pieces + sizeof(char\+Pieces) / sizeof(char));
-
-\subsection{Member Function Documentation}
-\hypertarget{classChess_a8266d0da94f72df7991799790915e38b}{}\index{Chess@{Chess}!get\+Square@{get\+Square}}
-\index{get\+Square@{get\+Square}!Chess@{Chess}}
-\subsubsection[{get\+Square(istream \&is)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Square} $\ast$ Chess\+::get\+Square (
-\begin{DoxyParamCaption}
-\item[{istream \&}]{is}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classChess_a8266d0da94f72df7991799790915e38b}
-Reads the row and column for a location on the board. The row and column values are separated by a space on one line. 
-
-Implements \hyperlink{classGame_a36fc5e6874822115ff6685c608da50db}{Game}.
-
-\hypertarget{classChess_ac85e41b8580d3300185bd2bc264ec6d8}{}\index{Chess@{Chess}!is\+Over@{is\+Over}}
-\index{is\+Over@{is\+Over}!Chess@{Chess}}
-\subsubsection[{is\+Over()}]{\setlength{\rightskip}{0pt plus 5cm}bool Chess\+::is\+Over (
+Constructor\+: Creates a 6x6 chess board and the pieces. alternative maybe char char\+Pieces \mbox{[}\mbox{]} = \{\textquotesingle{}r\textquotesingle{},\textquotesingle{}b\textquotesingle{},\textquotesingle{}k\textquotesingle{},\textquotesingle{}q\textquotesingle{},\textquotesingle{}b\textquotesingle{},\textquotesingle{}r\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}p\textquotesingle{}\}; pieces(char\+Pieces, char\+Pieces + sizeof(char\+Pieces) / sizeof(char));\hypertarget{classChess_aa9717ab5263bc4fbb844e78bbe5587a8}{}\index{Chess@{Chess}!````~Chess@{$\sim$\+Chess}}
+\index{````~Chess@{$\sim$\+Chess}!Chess@{Chess}}
+\subsubsection[{$\sim$\+Chess()}]{\setlength{\rightskip}{0pt plus 5cm}Chess\+::$\sim$\+Chess (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classChess_ac85e41b8580d3300185bd2bc264ec6d8}
-Overrides the \hyperlink{classChess_ac85e41b8580d3300185bd2bc264ec6d8}{is\+Over()} function from \hyperlink{classGame}{Game} to indicate that the game ends when one of the King pieces is taken. 
+)}\label{classChess_aa9717ab5263bc4fbb844e78bbe5587a8}
+Destructor 
 
-Implements \hyperlink{classGame_ae3f5006e677b713fa7f85d906cde3dde}{Game}.
+\subsection{Member Function Documentation}
+\hypertarget{classChess_a48b59dcf880ff97114b8c5a3989b0364}{}\index{Chess@{Chess}!get\+Square@{get\+Square}}
+\index{get\+Square@{get\+Square}!Chess@{Chess}}
+\subsubsection[{get\+Square(istream const \&is)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Square} $\ast$ Chess\+::get\+Square (
+\begin{DoxyParamCaption}
+\item[{istream const \&}]{is}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classChess_a48b59dcf880ff97114b8c5a3989b0364}
+Reads the row and column for a location on the board. The row and column values are separated by a space on one line. 
+\begin{DoxyParams}{Parameters}
+{\em \&is} & constant input stream. The pointed ro this stream should not be changing, hence declared const. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classGame_a78d07b6a2cedd5150b856cfa41a087da}{Game}.
+
+\hypertarget{classChess_a62b09f4b86c385c8042b8c7e192e10e5}{}\index{Chess@{Chess}!is\+Over@{is\+Over}}
+\index{is\+Over@{is\+Over}!Chess@{Chess}}
+\subsubsection[{is\+Over() const }]{\setlength{\rightskip}{0pt plus 5cm}bool Chess\+::is\+Over (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classChess_a62b09f4b86c385c8042b8c7e192e10e5}
+Overrides the \hyperlink{classChess_a62b09f4b86c385c8042b8c7e192e10e5}{is\+Over()} function from \hyperlink{classGame}{Game} to indicate that the game ends when one of the King pieces is taken. 
+
+Implements \hyperlink{classGame_aa07345e2f71668d147c0ed2257ed0e50}{Game}.
 
 \hypertarget{classChess_a9722d5c13c442eae33ca17792996213a}{}\index{Chess@{Chess}!setup@{setup}}
 \index{setup@{setup}!Chess@{Chess}}

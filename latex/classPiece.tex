@@ -8,8 +8,8 @@
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classPiece_ad9009085b915df6c20503f2ce144c931}{Piece} (string \hyperlink{classPiece_aa789cfb1749a0dc7ae40c20e369a4321}{colour}, char \hyperlink{classPiece_a00143ae55b69981ae484cc7521b6d81a}{symbol})
-\begin{DoxyCompactList}\small\item\em \+: This cpp file provides constructor for \hyperlink{classPiece}{Piece} and implements \hyperlink{classPiece_a9f6a89d6fd5ae865af73c2220d1a5839}{is\+Alive()} and \hyperlink{classPiece_a4c2ace5bc3eb68e46e8599702b782d94}{kill()} \end{DoxyCompactList}\item 
-bool \hyperlink{classPiece_a9f6a89d6fd5ae865af73c2220d1a5839}{is\+Alive} ()
+\begin{DoxyCompactList}\small\item\em \+: This cpp file provides constructor for \hyperlink{classPiece}{Piece} and implements \hyperlink{classPiece_ae6b1785f6356100873c0719be9bb4b90}{is\+Alive()} and \hyperlink{classPiece_a4c2ace5bc3eb68e46e8599702b782d94}{kill()} \end{DoxyCompactList}\item 
+bool \hyperlink{classPiece_ae6b1785f6356100873c0719be9bb4b90}{is\+Alive} () const 
 \item 
 void \hyperlink{classPiece_a4c2ace5bc3eb68e46e8599702b782d94}{kill} ()
 \item 
@@ -37,7 +37,7 @@ bool \hyperlink{classPiece_a8b3c2f812ead74ba513f521e63f767f9}{alive}
 )}\label{classPiece_ad9009085b915df6c20503f2ce144c931}
 
 
-\+: This cpp file provides constructor for \hyperlink{classPiece}{Piece} and implements \hyperlink{classPiece_a9f6a89d6fd5ae865af73c2220d1a5839}{is\+Alive()} and \hyperlink{classPiece_a4c2ace5bc3eb68e46e8599702b782d94}{kill()} 
+\+: This cpp file provides constructor for \hyperlink{classPiece}{Piece} and implements \hyperlink{classPiece_ae6b1785f6356100873c0719be9bb4b90}{is\+Alive()} and \hyperlink{classPiece_a4c2ace5bc3eb68e46e8599702b782d94}{kill()} 
 
 Didn\textquotesingle{}t include the variable alive in the constructor since everything at the beginning of the game will be alive when pieces are created.
 
@@ -51,13 +51,13 @@ Didn\textquotesingle{}t include the variable alive in the constructor since ever
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classPiece_a9f6a89d6fd5ae865af73c2220d1a5839}{}\index{Piece@{Piece}!is\+Alive@{is\+Alive}}
+\hypertarget{classPiece_ae6b1785f6356100873c0719be9bb4b90}{}\index{Piece@{Piece}!is\+Alive@{is\+Alive}}
 \index{is\+Alive@{is\+Alive}!Piece@{Piece}}
-\subsubsection[{is\+Alive()}]{\setlength{\rightskip}{0pt plus 5cm}bool Piece\+::is\+Alive (
+\subsubsection[{is\+Alive() const }]{\setlength{\rightskip}{0pt plus 5cm}bool Piece\+::is\+Alive (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classPiece_a9f6a89d6fd5ae865af73c2220d1a5839}
+) const}\label{classPiece_ae6b1785f6356100873c0719be9bb4b90}
 Returns true if the piece is still active on the board, false otherwise \hypertarget{classPiece_a4c2ace5bc3eb68e46e8599702b782d94}{}\index{Piece@{Piece}!kill@{kill}}
 \index{kill@{kill}!Piece@{Piece}}
 \subsubsection[{kill()}]{\setlength{\rightskip}{0pt plus 5cm}void Piece\+::kill (

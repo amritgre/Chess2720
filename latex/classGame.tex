@@ -22,11 +22,11 @@ void \hyperlink{classGame_aa333825d0bca80e91e53c7e23f053405}{play} ()
 \item 
 virtual void \hyperlink{classGame_a49067dcf360cfe353b9a99910136ac26}{setup} ()=0
 \item 
-virtual bool \hyperlink{classGame_ae3f5006e677b713fa7f85d906cde3dde}{is\+Over} ()=0
+virtual bool \hyperlink{classGame_aa07345e2f71668d147c0ed2257ed0e50}{is\+Over} () const  =0
 \item 
-virtual \hyperlink{classSquare}{Square} $\ast$ \hyperlink{classGame_a36fc5e6874822115ff6685c608da50db}{get\+Square} (istream \&is)=0
+virtual \hyperlink{classSquare}{Square} $\ast$ \hyperlink{classGame_a78d07b6a2cedd5150b856cfa41a087da}{get\+Square} (istream const \&is)=0
 \item 
-virtual \hyperlink{classGame_a72772b628443c3675976d6b5e6c9ec2a}{$\sim$\+Game} ()
+virtual \hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -46,40 +46,40 @@ bool \hyperlink{classGame_ae82939826eff0a8847cb822cf95227f4}{over}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classGame_a72772b628443c3675976d6b5e6c9ec2a}{}\index{Game@{Game}!````~Game@{$\sim$\+Game}}
+\hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}{}\index{Game@{Game}!````~Game@{$\sim$\+Game}}
 \index{````~Game@{$\sim$\+Game}!Game@{Game}}
-\subsubsection[{$\sim$\+Game()}]{\setlength{\rightskip}{0pt plus 5cm}virtual Game\+::$\sim$\+Game (
+\subsubsection[{$\sim$\+Game()}]{\setlength{\rightskip}{0pt plus 5cm}Game\+::$\sim$\+Game (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classGame_a72772b628443c3675976d6b5e6c9ec2a}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classGame_a36fc5e6874822115ff6685c608da50db}{}\index{Game@{Game}!get\+Square@{get\+Square}}
+\hypertarget{classGame_a78d07b6a2cedd5150b856cfa41a087da}{}\index{Game@{Game}!get\+Square@{get\+Square}}
 \index{get\+Square@{get\+Square}!Game@{Game}}
-\subsubsection[{get\+Square(istream \&is)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Square}$\ast$ Game\+::get\+Square (
+\subsubsection[{get\+Square(istream const \&is)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Square}$\ast$ Game\+::get\+Square (
 \begin{DoxyParamCaption}
-\item[{istream \&}]{is}
+\item[{istream const \&}]{is}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classGame_a36fc5e6874822115ff6685c608da50db}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classGame_a78d07b6a2cedd5150b856cfa41a087da}
 reads the input stream and returns a square from the board. 
 
-Implemented in \hyperlink{classChess_a8266d0da94f72df7991799790915e38b}{Chess}.
+Implemented in \hyperlink{classChess_a48b59dcf880ff97114b8c5a3989b0364}{Chess}.
 
-\hypertarget{classGame_ae3f5006e677b713fa7f85d906cde3dde}{}\index{Game@{Game}!is\+Over@{is\+Over}}
+\hypertarget{classGame_aa07345e2f71668d147c0ed2257ed0e50}{}\index{Game@{Game}!is\+Over@{is\+Over}}
 \index{is\+Over@{is\+Over}!Game@{Game}}
-\subsubsection[{is\+Over()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Game\+::is\+Over (
+\subsubsection[{is\+Over() const  =0}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Game\+::is\+Over (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classGame_ae3f5006e677b713fa7f85d906cde3dde}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classGame_aa07345e2f71668d147c0ed2257ed0e50}
 Indicates if the game is over. \begin{DoxyReturn}{Returns}
 bool 
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classChess_ac85e41b8580d3300185bd2bc264ec6d8}{Chess}.
+Implemented in \hyperlink{classChess_a62b09f4b86c385c8042b8c7e192e10e5}{Chess}.
 
 \hypertarget{classGame_aa333825d0bca80e91e53c7e23f053405}{}\index{Game@{Game}!play@{play}}
 \index{play@{play}!Game@{Game}}

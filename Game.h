@@ -32,12 +32,12 @@ class Game {
      * Indicates if the game is over.
      * @return bool
      */
-    virtual bool isOver()  = 0;
+    virtual bool isOver()  const = 0;
 
     /**
      * reads the input stream and returns a square from the board.
      */
-    virtual Square* getSquare(istream &is)  = 0;
+    virtual Square* getSquare(istream const &is)  = 0;
 
     virtual ~Game();
 

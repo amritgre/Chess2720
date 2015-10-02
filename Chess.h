@@ -32,13 +32,14 @@ class Chess : public Game {
     /**
      * Overrides the isOver() function from Game to indicate that the game ends when one of the King pieces is taken.
      */
-    bool isOver();
+    bool isOver() const;
 
     /**
      * Reads the row and column for a location on the board.
      * The row and column values are separated by a space on one line.
+     * @param &is: constant input stream. The pointed ro this stream should not be changing, hence declared const.
      */
-    Square* getSquare(istream &is);
+    Square* getSquare(istream const &is);
 
     /**
      * Destructor

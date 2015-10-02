@@ -9,5 +9,6 @@
 
 int main(){
 	Chess* chess = new Chess();
+	chess->play();
 	return 0;
 }

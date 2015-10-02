@@ -8,7 +8,7 @@ Square::Square(int row, int col)
 }
 
 
-char Square::symbol()
+char Square::symbol() const
 {
 	if(this->piece == NULL)
 		return '.';
@@ -21,7 +21,7 @@ void Square::setPiece(Piece* p)
 	this->piece = p;
 }
 
-Piece* Square::getPiece()
+Piece* Square::getPiece() const
 {
 	return this->piece;
 }

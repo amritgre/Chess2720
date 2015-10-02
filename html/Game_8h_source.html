@@ -109,26 +109,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classGame.html#a49067dcf360cfe353b9a99910136ac26">setup</a>()  = 0;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classGame.html#ae3f5006e677b713fa7f85d906cde3dde">isOver</a>()  = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classGame.html#aa07345e2f71668d147c0ed2257ed0e50">isOver</a>()  <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classSquare.html">Square</a>* <a class="code" href="classGame.html#a36fc5e6874822115ff6685c608da50db">getSquare</a>(istream &amp;is)  = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classSquare.html">Square</a>* <a class="code" href="classGame.html#a78d07b6a2cedd5150b856cfa41a087da">getSquare</a>(istream <span class="keyword">const</span> &amp;is)  = 0;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classGame.html#a72772b628443c3675976d6b5e6c9ec2a">~Game</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classGame.html#ae3d112ca6e0e55150d2fdbc704474530">~Game</a>();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif // Game_h</span></div>
 <div class="ttc" id="classGame_html_ae82939826eff0a8847cb822cf95227f4"><div class="ttname"><a href="classGame.html#ae82939826eff0a8847cb822cf95227f4">Game::over</a></div><div class="ttdeci">bool over</div><div class="ttdef"><b>Definition:</b> Game.h:15</div></div>
+<div class="ttc" id="classGame_html_aa07345e2f71668d147c0ed2257ed0e50"><div class="ttname"><a href="classGame.html#aa07345e2f71668d147c0ed2257ed0e50">Game::isOver</a></div><div class="ttdeci">virtual bool isOver() const  =0</div></div>
 <div class="ttc" id="classGame_html_a49067dcf360cfe353b9a99910136ac26"><div class="ttname"><a href="classGame.html#a49067dcf360cfe353b9a99910136ac26">Game::setup</a></div><div class="ttdeci">virtual void setup()=0</div></div>
-<div class="ttc" id="classGame_html_a36fc5e6874822115ff6685c608da50db"><div class="ttname"><a href="classGame.html#a36fc5e6874822115ff6685c608da50db">Game::getSquare</a></div><div class="ttdeci">virtual Square * getSquare(istream &amp;is)=0</div></div>
-<div class="ttc" id="classGame_html_ae3f5006e677b713fa7f85d906cde3dde"><div class="ttname"><a href="classGame.html#ae3f5006e677b713fa7f85d906cde3dde">Game::isOver</a></div><div class="ttdeci">virtual bool isOver()=0</div></div>
 <div class="ttc" id="classBoard_html"><div class="ttname"><a href="classBoard.html">Board</a></div><div class="ttdef"><b>Definition:</b> Board.h:16</div></div>
+<div class="ttc" id="classGame_html_ae3d112ca6e0e55150d2fdbc704474530"><div class="ttname"><a href="classGame.html#ae3d112ca6e0e55150d2fdbc704474530">Game::~Game</a></div><div class="ttdeci">virtual ~Game()</div><div class="ttdef"><b>Definition:</b> Game.cpp:14</div></div>
 <div class="ttc" id="classGame_html"><div class="ttname"><a href="classGame.html">Game</a></div><div class="ttdoc">: An abstraction of a board game. The game has a Board. </div><div class="ttdef"><b>Definition:</b> Game.h:11</div></div>
 <div class="ttc" id="Square_8h_html"><div class="ttname"><a href="Square_8h.html">Square.h</a></div></div>
-<div class="ttc" id="classGame_html_a72772b628443c3675976d6b5e6c9ec2a"><div class="ttname"><a href="classGame.html#a72772b628443c3675976d6b5e6c9ec2a">Game::~Game</a></div><div class="ttdeci">virtual ~Game()</div></div>
 <div class="ttc" id="classGame_html_aa333825d0bca80e91e53c7e23f053405"><div class="ttname"><a href="classGame.html#aa333825d0bca80e91e53c7e23f053405">Game::play</a></div><div class="ttdeci">void play()</div><div class="ttdef"><b>Definition:</b> Game.cpp:4</div></div>
 <div class="ttc" id="classSquare_html"><div class="ttname"><a href="classSquare.html">Square</a></div><div class="ttdoc">: Square is a location on the board that can contain a Piece and its location info ie...</div><div class="ttdef"><b>Definition:</b> Square.h:11</div></div>
 <div class="ttc" id="classGame_html_ae38e501e177586af48d2e2300b6be4ba"><div class="ttname"><a href="classGame.html#ae38e501e177586af48d2e2300b6be4ba">Game::board</a></div><div class="ttdeci">Board * board</div><div class="ttdef"><b>Definition:</b> Game.h:17</div></div>
+<div class="ttc" id="classGame_html_a78d07b6a2cedd5150b856cfa41a087da"><div class="ttname"><a href="classGame.html#a78d07b6a2cedd5150b856cfa41a087da">Game::getSquare</a></div><div class="ttdeci">virtual Square * getSquare(istream const &amp;is)=0</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

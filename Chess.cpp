@@ -76,7 +76,7 @@ void Chess::setup()
 	board->placePiece(pieces.at(23), board->getSquare(5,5));
 }
 
-bool Chess::isOver()
+bool Chess::isOver() const
 {
     return over;
 }

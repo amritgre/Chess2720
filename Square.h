@@ -20,7 +20,7 @@ class Square {
     /**
      * Returns the symbol of the piece on the square, or a symbol indicating an empty square (“.”).
      */
-    char symbol();
+    char symbol() const;
 
     /**
      * Sets a piece on the square
@@ -30,7 +30,7 @@ class Square {
     /**
      * Returns the piece on the square, if it exists, otherwise returns NULL;
      */
-    Piece* getPiece();
+    Piece* getPiece() const;
 
     /**
      * Removes a piece from a square and returns it, if it exists.

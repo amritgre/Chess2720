@@ -112,12 +112,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa333825d0bca80e91e53c7e23f053405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49067dcf360cfe353b9a99910136ac26"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a49067dcf360cfe353b9a99910136ac26">setup</a> ()=0</td></tr>
 <tr class="separator:a49067dcf360cfe353b9a99910136ac26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3f5006e677b713fa7f85d906cde3dde"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ae3f5006e677b713fa7f85d906cde3dde">isOver</a> ()=0</td></tr>
-<tr class="separator:ae3f5006e677b713fa7f85d906cde3dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36fc5e6874822115ff6685c608da50db"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSquare.html">Square</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a36fc5e6874822115ff6685c608da50db">getSquare</a> (istream &amp;is)=0</td></tr>
-<tr class="separator:a36fc5e6874822115ff6685c608da50db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72772b628443c3675976d6b5e6c9ec2a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a72772b628443c3675976d6b5e6c9ec2a">~Game</a> ()</td></tr>
-<tr class="separator:a72772b628443c3675976d6b5e6c9ec2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07345e2f71668d147c0ed2257ed0e50"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#aa07345e2f71668d147c0ed2257ed0e50">isOver</a> () const  =0</td></tr>
+<tr class="separator:aa07345e2f71668d147c0ed2257ed0e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d07b6a2cedd5150b856cfa41a087da"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSquare.html">Square</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a78d07b6a2cedd5150b856cfa41a087da">getSquare</a> (istream const &amp;is)=0</td></tr>
+<tr class="separator:a78d07b6a2cedd5150b856cfa41a087da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d112ca6e0e55150d2fdbc704474530"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ae3d112ca6e0e55150d2fdbc704474530">~Game</a> ()</td></tr>
+<tr class="separator:ae3d112ca6e0e55150d2fdbc704474530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -130,7 +130,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>: An abstraction of a board game. The game has a <a class="el" href="classBoard.html">Board</a>. </p>
 <dl class="section author"><dt>Author</dt><dd>: Amrit </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a72772b628443c3675976d6b5e6c9ec2a"></a>
+<a class="anchor" id="ae3d112ca6e0e55150d2fdbc704474530"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -138,7 +138,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Game::~Game </td>
+          <td class="memname">Game::~Game </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -154,7 +154,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a36fc5e6874822115ff6685c608da50db"></a>
+<a class="anchor" id="a78d07b6a2cedd5150b856cfa41a087da"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -164,7 +164,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classSquare.html">Square</a>* Game::getSquare </td>
           <td>(</td>
-          <td class="paramtype">istream &amp;&#160;</td>
+          <td class="paramtype">istream const &amp;&#160;</td>
           <td class="paramname"><em>is</em></td><td>)</td>
           <td></td>
         </tr>
@@ -177,11 +177,11 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>reads the input stream and returns a square from the board. </p>
 
-<p>Implemented in <a class="el" href="classChess.html#a8266d0da94f72df7991799790915e38b">Chess</a>.</p>
+<p>Implemented in <a class="el" href="classChess.html#a48b59dcf880ff97114b8c5a3989b0364">Chess</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae3f5006e677b713fa7f85d906cde3dde"></a>
+<a class="anchor" id="aa07345e2f71668d147c0ed2257ed0e50"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -192,7 +192,7 @@ Public Attributes</h2></td></tr>
           <td class="memname">virtual bool Game::isOver </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -203,7 +203,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Indicates if the game is over. </p><dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p>Implemented in <a class="el" href="classChess.html#ac85e41b8580d3300185bd2bc264ec6d8">Chess</a>.</p>
+<p>Implemented in <a class="el" href="classChess.html#a62b09f4b86c385c8042b8c7e192e10e5">Chess</a>.</p>
 
 </div>
 </div>

@@ -2,12 +2,12 @@
  * Chess2720.h
  *
  *  Created on: Oct 1, 2015
- *      Author: root
+ *      @author: Amrit
+ *      @brief: This is a driver class for the chess program.
  */
 
 #ifndef CHESS2720_H_
 #define CHESS2720_H_
-#define
 
 
 class Chess2720 {
