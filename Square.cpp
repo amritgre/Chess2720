@@ -1,7 +1,8 @@
+/**
+ * @author: Amrit
+ * Description: Implements Square's methods and constructor.
+ */
 #include "Square.h"
-
-
-
 
 Square::Square(int row, int col)
 {
@@ -12,7 +13,10 @@ Square::Square(int row, int col)
 
 char Square::symbol()
 {
-    return this->piece->symbol;
+	if(this->piece == NULL)
+		return '.';
+	else
+		return this->piece->symbol;
 }
 
 void Square::setPiece(Piece* p)

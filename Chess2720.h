@@ -1,4 +1,4 @@
-/*
+/**
  * Chess2720.h
  *
  *  Created on: Oct 1, 2015

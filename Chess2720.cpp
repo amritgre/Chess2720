@@ -1,4 +1,4 @@
-/*
+/**
  * Chess2720.cpp
  *
  *  Created on: Oct 1, 2015

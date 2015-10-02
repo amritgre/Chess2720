@@ -1,3 +1,7 @@
+/**
+ * @Author: Amrit Grewal
+ * Description: This cpp file provides constructor for Piece and implements isAlive() and kill()
+ */
 #include "Piece.h"
 
 

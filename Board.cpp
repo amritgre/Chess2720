@@ -33,6 +33,7 @@ void Board::placePiece(Piece* p, Square* s)
 
 void Board::movePiece(Square* s, Square* d)
 {
+    // TODO: Use assert() to verify that a piece exists on s.
     d -> setPiece (s -> getPiece());
     s -> removePiece();
 }
