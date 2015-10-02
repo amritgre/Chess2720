@@ -13,7 +13,7 @@ class Board {
 
  public:
 
-    Board(int length, int width);
+    Board(int height, int width);
 
     void draw(ostream* o);
 
@@ -24,9 +24,9 @@ class Board {
     Square* getSquare(int r, int c);
 
  public:
-    int length;
+    int height;
     int width;
-    std::vector<Square*> squares;
+    vector<Square*> squares;
 
 };
 

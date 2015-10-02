@@ -9,6 +9,8 @@ class Square {
 
     Square(int row, int col);
 
+
+
     char symbol();
 
     void setPiece(Piece* p);

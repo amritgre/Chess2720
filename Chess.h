@@ -22,7 +22,7 @@ class Chess : public Game {
     Square* getSquare(istream &is);
 
  private:
-    Board* board;
+
     vector<Piece*> pieces;
 
 };

@@ -1,16 +1,18 @@
 #ifndef Game_h
 #define Game_h
 
-#include "Square*.h"
-#include "bool.h"
-#include "istream.h"
-
+#include "Square.h"
+#include <iostream>
 
 class Game {
 
  public:
 
-    virtual void play();
+	bool over;
+
+    Board* board;
+
+    void play();
 
     virtual void setup()  = 0;
 
@@ -18,13 +20,8 @@ class Game {
 
     virtual Square* getSquare(istream &is)  = 0;
 
-    virtual bool movePiece(Square* s, Square* d);
-
     virtual ~Game();
 
- public:
-    Integer newAttr;
-    Integer newAttr;
 };
 
 #endif // Game_h
