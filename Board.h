@@ -1,6 +1,6 @@
 /**
  * @author: Amrit
- * Description: An abstraction of a two-dimensional board. The board is made of squares.
+ * @brief: An abstraction of a two-dimensional board. The board is made of squares.
  */
 #ifndef Board_h
 #define Board_h

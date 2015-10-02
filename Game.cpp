@@ -5,7 +5,7 @@ void Game::play()
 {
 	setup();
 	while(!isOver()){
-		board->draw()
+		//board->draw()
 
 
 	}

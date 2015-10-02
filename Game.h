@@ -1,6 +1,6 @@
 /**
  * @author: Amrit
- * Description: An abstraction of a board game. The game has a Board.
+ * @brief: An abstraction of a board game. The game has a Board.
  */
 #ifndef Game_h
 #define Game_h
@@ -30,6 +30,7 @@ class Game {
 
     /**
      * Indicates if the game is over.
+     * @return bool
      */
     virtual bool isOver()  = 0;
 

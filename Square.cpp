@@ -1,7 +1,4 @@
-/**
- * @author: Amrit
- * Description: Implements Square's methods and constructor.
- */
+
 #include "Square.h"
 
 Square::Square(int row, int col)

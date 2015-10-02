@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>My Project: Game Class Reference</title>
+<title>Chess2720: Game Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Chess2720
+   &#160;<span id="projectnumber">0.1</span>
    </div>
   </td>
  </tr>
@@ -91,6 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>: An abstraction of a board game. The game has a <a class="el" href="classBoard.html">Board</a>.  
+ <a href="classGame.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Game_8h_source.html">Game.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Game:</div>
@@ -98,4 +102,187 @@ Inheritance diagram for Game:</div>
  <div class="center">
   <img src="classGame.png" usemap="#Game_map" alt=""/>
   <map id="Game_map" name="Game_map">
-<area href="c
+<area href="classChess.html" alt="Chess" shape="rect" coords="0,56,47,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa333825d0bca80e91e53c7e23f053405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#aa333825d0bca80e91e53c7e23f053405">play</a> ()</td></tr>
+<tr class="separator:aa333825d0bca80e91e53c7e23f053405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49067dcf360cfe353b9a99910136ac26"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a49067dcf360cfe353b9a99910136ac26">setup</a> ()=0</td></tr>
+<tr class="separator:a49067dcf360cfe353b9a99910136ac26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f5006e677b713fa7f85d906cde3dde"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ae3f5006e677b713fa7f85d906cde3dde">isOver</a> ()=0</td></tr>
+<tr class="separator:ae3f5006e677b713fa7f85d906cde3dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36fc5e6874822115ff6685c608da50db"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSquare.html">Square</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a36fc5e6874822115ff6685c608da50db">getSquare</a> (istream &amp;is)=0</td></tr>
+<tr class="separator:a36fc5e6874822115ff6685c608da50db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72772b628443c3675976d6b5e6c9ec2a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a72772b628443c3675976d6b5e6c9ec2a">~Game</a> ()</td></tr>
+<tr class="separator:a72772b628443c3675976d6b5e6c9ec2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae82939826eff0a8847cb822cf95227f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ae82939826eff0a8847cb822cf95227f4">over</a></td></tr>
+<tr class="separator:ae82939826eff0a8847cb822cf95227f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38e501e177586af48d2e2300b6be4ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBoard.html">Board</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ae38e501e177586af48d2e2300b6be4ba">board</a></td></tr>
+<tr class="separator:ae38e501e177586af48d2e2300b6be4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>: An abstraction of a board game. The game has a <a class="el" href="classBoard.html">Board</a>. </p>
+<dl class="section author"><dt>Author</dt><dd>: Amrit </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a72772b628443c3675976d6b5e6c9ec2a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Game::~Game </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a36fc5e6874822115ff6685c608da50db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classSquare.html">Square</a>* Game::getSquare </td>
+          <td>(</td>
+          <td class="paramtype">istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>reads the input stream and returns a square from the board. </p>
+
+<p>Implemented in <a class="el" href="classChess.html#a8266d0da94f72df7991799790915e38b">Chess</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae3f5006e677b713fa7f85d906cde3dde"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Game::isOver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indicates if the game is over. </p><dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+<p>Implemented in <a class="el" href="classChess.html#ac85e41b8580d3300185bd2bc264ec6d8">Chess</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa333825d0bca80e91e53c7e23f053405"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::play </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a49067dcf360cfe353b9a99910136ac26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Game::setup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setups up the board for the game. </p>
+
+<p>Implemented in <a class="el" href="classChess.html#a9722d5c13c442eae33ca17792996213a">Chess</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ae38e501e177586af48d2e2300b6be4ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBoard.html">Board</a>* Game::board</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae82939826eff0a8847cb822cf95227f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::over</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="Game_8h_source.html">Game.h</a></li>
+<li><a class="el" href="Game_8cpp.html">Game.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,6 +1,6 @@
 /**
  * @author: Amrit
- * Description: A class that provides the implementation of the abstract
+ * @brief: A class that provides the implementation of the abstract
  * (i.e. virtual) class of Game. It contains the Pieces of the game.
  */
 #ifndef Chess_h
@@ -11,6 +11,7 @@
 #include "Square.h"
 #include <iostream>
 #include <vector>
+#include <stdlib.h>
 
 using namespace std;
 

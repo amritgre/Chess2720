@@ -1,6 +1,6 @@
 /**
  * @author: Amrit
- * Description: Square is a location on the board that can contain a Piece and its location info ie. row and column.
+ * @brief: Square is a location on the board that can contain a Piece and its location info ie. row and column.
  */
 
 #ifndef Square_h

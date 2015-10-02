@@ -1,9 +1,13 @@
 \hypertarget{classBoard}{}\section{Board Class Reference}
 \label{classBoard}\index{Board@{Board}}
+
+
+{\ttfamily \#include $<$Board.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classBoard_a1291ca893864123e2a144ce5e4d8beb3}{Board} (int height, int width)
+\hyperlink{classBoard_a1291ca893864123e2a144ce5e4d8beb3}{Board} (int \hyperlink{classBoard_aa0cb8de0254520dc08dab5796643c8e5}{height}, int \hyperlink{classBoard_a90a8efaa4736af25511ac948bdd27d6c}{width})
 \item 
 void \hyperlink{classBoard_a07010bc149d198961c4669cec2ca4905}{draw} (ostream $\ast$o)
 \item 
@@ -11,20 +15,16 @@ void \hyperlink{classBoard_ab96f988bdac00e84aa3ae9995e16921c}{place\+Piece} (\hy
 \item 
 void \hyperlink{classBoard_a71bbcd990439137e81b14ab229787daa}{move\+Piece} (\hyperlink{classSquare}{Square} $\ast$s, \hyperlink{classSquare}{Square} $\ast$d)
 \item 
-\hypertarget{classBoard_afa30630891e15327329bd1fb62de3484}{}\hyperlink{classSquare}{Square} $\ast$ {\bfseries get\+Square} (int r, int c)\label{classBoard_afa30630891e15327329bd1fb62de3484}
-
+\hyperlink{classSquare}{Square} $\ast$ \hyperlink{classBoard_afa30630891e15327329bd1fb62de3484}{get\+Square} (int r, int c)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classBoard_aa0cb8de0254520dc08dab5796643c8e5}{}int {\bfseries height}\label{classBoard_aa0cb8de0254520dc08dab5796643c8e5}
-
+int \hyperlink{classBoard_aa0cb8de0254520dc08dab5796643c8e5}{height}
 \item 
-\hypertarget{classBoard_a90a8efaa4736af25511ac948bdd27d6c}{}int {\bfseries width}\label{classBoard_a90a8efaa4736af25511ac948bdd27d6c}
-
+int \hyperlink{classBoard_a90a8efaa4736af25511ac948bdd27d6c}{width}
 \item 
-\hypertarget{classBoard_a7a0a34a623e8fd5e350fdb31bd10f182}{}vector$<$ \hyperlink{classSquare}{Square} $\ast$ $>$ {\bfseries squares}\label{classBoard_a7a0a34a623e8fd5e350fdb31bd10f182}
-
+vector$<$ \hyperlink{classSquare}{Square} $\ast$ $>$ \hyperlink{classBoard_a7a0a34a623e8fd5e350fdb31bd10f182}{squares}
 \end{DoxyCompactItemize}
 
 
@@ -47,7 +47,15 @@ Constructor\+: takes two parameters – width and height – for specifying the 
 \item[{ostream $\ast$}]{o}
 \end{DoxyParamCaption}
 )}\label{classBoard_a07010bc149d198961c4669cec2ca4905}
-Draws the board to an output stream \hypertarget{classBoard_a71bbcd990439137e81b14ab229787daa}{}\index{Board@{Board}!move\+Piece@{move\+Piece}}
+Draws the board to an output stream \hypertarget{classBoard_afa30630891e15327329bd1fb62de3484}{}\index{Board@{Board}!get\+Square@{get\+Square}}
+\index{get\+Square@{get\+Square}!Board@{Board}}
+\subsubsection[{get\+Square(int r, int c)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Square} $\ast$ Board\+::get\+Square (
+\begin{DoxyParamCaption}
+\item[{int}]{r, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}\label{classBoard_afa30630891e15327329bd1fb62de3484}
+\hypertarget{classBoard_a71bbcd990439137e81b14ab229787daa}{}\index{Board@{Board}!move\+Piece@{move\+Piece}}
 \index{move\+Piece@{move\+Piece}!Board@{Board}}
 \subsubsection[{move\+Piece(\+Square $\ast$s, Square $\ast$d)}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::move\+Piece (
 \begin{DoxyParamCaption}
@@ -65,7 +73,19 @@ Moves the \hyperlink{classPiece}{Piece} on \hyperlink{classSquare}{Square} s to 
 )}\label{classBoard_ab96f988bdac00e84aa3ae9995e16921c}
 Places a \hyperlink{classPiece}{Piece} on a \hyperlink{classSquare}{Square} 
 
+\subsection{Member Data Documentation}
+\hypertarget{classBoard_aa0cb8de0254520dc08dab5796643c8e5}{}\index{Board@{Board}!height@{height}}
+\index{height@{height}!Board@{Board}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}int Board\+::height}\label{classBoard_aa0cb8de0254520dc08dab5796643c8e5}
+\hypertarget{classBoard_a7a0a34a623e8fd5e350fdb31bd10f182}{}\index{Board@{Board}!squares@{squares}}
+\index{squares@{squares}!Board@{Board}}
+\subsubsection[{squares}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Square}$\ast$$>$ Board\+::squares}\label{classBoard_a7a0a34a623e8fd5e350fdb31bd10f182}
+\hypertarget{classBoard_a90a8efaa4736af25511ac948bdd27d6c}{}\index{Board@{Board}!width@{width}}
+\index{width@{width}!Board@{Board}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int Board\+::width}\label{classBoard_a90a8efaa4736af25511ac948bdd27d6c}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Board.\+h\item 
-Board.\+cpp\end{DoxyCompactItemize}
+\hyperlink{Board_8h}{Board.\+h}\item 
+\hyperlink{Board_8cpp}{Board.\+cpp}\end{DoxyCompactItemize}

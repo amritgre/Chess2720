@@ -1,6 +1,6 @@
 /**
  * @Author: Amrit Grewal
- * Description: This header file defines a piece that will be used in chess game.
+ * @brief: This header file defines a piece that will be used in chess game.
  */
 #ifndef Piece_h
 #define Piece_h

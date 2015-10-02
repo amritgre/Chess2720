@@ -1,0 +1,85 @@
+\hypertarget{classPiece}{}\section{Piece Class Reference}
+\label{classPiece}\index{Piece@{Piece}}
+
+
+{\ttfamily \#include $<$Piece.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPiece_ad9009085b915df6c20503f2ce144c931}{Piece} (string \hyperlink{classPiece_aa789cfb1749a0dc7ae40c20e369a4321}{colour}, char \hyperlink{classPiece_a00143ae55b69981ae484cc7521b6d81a}{symbol})
+\begin{DoxyCompactList}\small\item\em \+: This cpp file provides constructor for \hyperlink{classPiece}{Piece} and implements \hyperlink{classPiece_a9f6a89d6fd5ae865af73c2220d1a5839}{is\+Alive()} and \hyperlink{classPiece_a4c2ace5bc3eb68e46e8599702b782d94}{kill()} \end{DoxyCompactList}\item 
+bool \hyperlink{classPiece_a9f6a89d6fd5ae865af73c2220d1a5839}{is\+Alive} ()
+\item 
+void \hyperlink{classPiece_a4c2ace5bc3eb68e46e8599702b782d94}{kill} ()
+\item 
+\hyperlink{classPiece_a5d7a4f6bade94cb33b6f634de8aa7918}{$\sim$\+Piece} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classPiece_aa789cfb1749a0dc7ae40c20e369a4321}{colour}
+\item 
+char \hyperlink{classPiece_a00143ae55b69981ae484cc7521b6d81a}{symbol}
+\item 
+bool \hyperlink{classPiece_a8b3c2f812ead74ba513f521e63f767f9}{alive}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPiece_ad9009085b915df6c20503f2ce144c931}{}\index{Piece@{Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!Piece@{Piece}}
+\subsubsection[{Piece(string colour, char symbol)}]{\setlength{\rightskip}{0pt plus 5cm}Piece\+::\+Piece (
+\begin{DoxyParamCaption}
+\item[{string}]{colour, }
+\item[{char}]{symbol}
+\end{DoxyParamCaption}
+)}\label{classPiece_ad9009085b915df6c20503f2ce144c931}
+
+
+\+: This cpp file provides constructor for \hyperlink{classPiece}{Piece} and implements \hyperlink{classPiece_a9f6a89d6fd5ae865af73c2220d1a5839}{is\+Alive()} and \hyperlink{classPiece_a4c2ace5bc3eb68e46e8599702b782d94}{kill()} 
+
+Didn\textquotesingle{}t include the variable alive in the constructor since everything at the beginning of the game will be alive when pieces are created.
+
+\+: Amrit Grewal \hypertarget{classPiece_a5d7a4f6bade94cb33b6f634de8aa7918}{}\index{Piece@{Piece}!````~Piece@{$\sim$\+Piece}}
+\index{````~Piece@{$\sim$\+Piece}!Piece@{Piece}}
+\subsubsection[{$\sim$\+Piece()}]{\setlength{\rightskip}{0pt plus 5cm}Piece\+::$\sim$\+Piece (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPiece_a5d7a4f6bade94cb33b6f634de8aa7918}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPiece_a9f6a89d6fd5ae865af73c2220d1a5839}{}\index{Piece@{Piece}!is\+Alive@{is\+Alive}}
+\index{is\+Alive@{is\+Alive}!Piece@{Piece}}
+\subsubsection[{is\+Alive()}]{\setlength{\rightskip}{0pt plus 5cm}bool Piece\+::is\+Alive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPiece_a9f6a89d6fd5ae865af73c2220d1a5839}
+Returns true if the piece is still active on the board, false otherwise \hypertarget{classPiece_a4c2ace5bc3eb68e46e8599702b782d94}{}\index{Piece@{Piece}!kill@{kill}}
+\index{kill@{kill}!Piece@{Piece}}
+\subsubsection[{kill()}]{\setlength{\rightskip}{0pt plus 5cm}void Piece\+::kill (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classPiece_a4c2ace5bc3eb68e46e8599702b782d94}
+sets the piece to be inactive on the board 
+
+\subsection{Member Data Documentation}
+\hypertarget{classPiece_a8b3c2f812ead74ba513f521e63f767f9}{}\index{Piece@{Piece}!alive@{alive}}
+\index{alive@{alive}!Piece@{Piece}}
+\subsubsection[{alive}]{\setlength{\rightskip}{0pt plus 5cm}bool Piece\+::alive}\label{classPiece_a8b3c2f812ead74ba513f521e63f767f9}
+\hypertarget{classPiece_aa789cfb1749a0dc7ae40c20e369a4321}{}\index{Piece@{Piece}!colour@{colour}}
+\index{colour@{colour}!Piece@{Piece}}
+\subsubsection[{colour}]{\setlength{\rightskip}{0pt plus 5cm}string Piece\+::colour}\label{classPiece_aa789cfb1749a0dc7ae40c20e369a4321}
+\hypertarget{classPiece_a00143ae55b69981ae484cc7521b6d81a}{}\index{Piece@{Piece}!symbol@{symbol}}
+\index{symbol@{symbol}!Piece@{Piece}}
+\subsubsection[{symbol}]{\setlength{\rightskip}{0pt plus 5cm}char Piece\+::symbol}\label{classPiece_a00143ae55b69981ae484cc7521b6d81a}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Piece_8h}{Piece.\+h}\item 
+\hyperlink{Piece_8cpp}{Piece.\+cpp}\end{DoxyCompactItemize}
