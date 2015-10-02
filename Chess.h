@@ -1,54 +1,30 @@
 #ifndef Chess_h
 #define Chess_h
 
-#include ".h"
-#include "Board*.h"
 #include "Board.h"
 #include "Game.h"
-#include "Square*.h"
-#include "bool.h"
-#include "istream.h"
-#include "vector<Piece*>.h"
+#include "Square.h"
+#include <iostream>
+#include <vector>
 
-class Piece;
+using namespace std;
 
-class Chess : public , public Game {
+class Chess : public Game {
 
  public:
 
     Chess();
 
-    virtual void setup();
+    void setup();
 
-    virtual bool isOver();
+    bool isOver();
 
-    virtual Square* getSquare(istream &is);
+    Square* getSquare(istream &is);
 
- public:
+ private:
     Board* board;
     vector<Piece*> pieces;
 
- public:
-
-    /**
-     * @element-type Board
-     */
-    Board *myBoard;
-
-    /**
-     * @element-type Board
-     */
-    Board myBoard;
-
-    /**
-     * @element-type Board
-     */
-    Board myBoard;
-
-    /**
-     * @element-type Piece
-     */
-    Piece *myPiece;
 };
 
 #endif // Chess_h

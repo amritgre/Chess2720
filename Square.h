@@ -1,10 +1,7 @@
 #ifndef Square_h
 #define Square_h
 
-#include "Piece*.h"
-#include "char.h"
-#include "int.h"
-
+#include "Piece.h"
 
 class Square {
 
@@ -12,16 +9,18 @@ class Square {
 
     Square(int row, int col);
 
-    virtual char symbol();
+    char symbol();
 
-    virtual void setPiece(Piece* p);
+    void setPiece(Piece* p);
 
-    virtual Piece* getPiece();
+    Piece* getPiece();
 
-    virtual Piece* removePiece();
+    Piece* removePiece();
 
  public:
     Piece* piece;
+    int row;
+	int col;
 
 };
 

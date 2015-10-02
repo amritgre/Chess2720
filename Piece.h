@@ -1,23 +1,26 @@
 #ifndef Piece_h
 #define Piece_h
 
-#include "bool.h"
-#include "char.h"
+#include <string>
 
+using namespace std;
 
 class Piece {
 
  public:
 
-    Piece(String colour, char symbol);
+   Piece(string colour, char symbol);
 
-    virtual bool isAlive();
+    bool isAlive();
 
-    virtual void kill();
+    void kill();
+
+    ~Piece();
 
  public:
-    String colour;
+    string colour;
     char symbol;
+    bool alive;
 
 };
 
