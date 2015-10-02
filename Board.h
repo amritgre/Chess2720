@@ -39,6 +39,8 @@ class Board {
 
     Square* getSquare(int r, int c);
 
+    ~Board();
+
  public:
     int height;
     int width;

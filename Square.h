@@ -37,6 +37,12 @@ class Square {
      */
     Piece* removePiece();
 
+    /**
+     * Destructor
+     */
+
+    ~Square();
+
  public:
     Piece* piece;//Null if nothing is on the square
     int row;

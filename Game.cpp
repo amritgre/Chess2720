@@ -10,3 +10,8 @@ void Game::play()
 
 	}
 }
+
+Game::~Game(){
+	delete[] board;
+	delete over;
+}

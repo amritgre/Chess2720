@@ -40,6 +40,11 @@ class Chess : public Game {
      */
     Square* getSquare(istream &is);
 
+    /**
+     * Destructor
+     */
+    ~Chess();
+
  private:
 
     vector<Piece*> pieces;

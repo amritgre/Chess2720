@@ -32,3 +32,10 @@ Piece* Square::removePiece()
 	this->piece = NULL;
 	return tempP;
 }
+
+Square::~Square(){
+	delete row;
+	delete col;
+	delete[] piece;
+}
+

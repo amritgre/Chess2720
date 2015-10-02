@@ -83,15 +83,20 @@ bool Chess::isOver()
 
 Square* Chess::getSquare(istream &is)
 {
-	string row;
-	string col;
+	//TODO: DO NOT output prompts here
+//	string row;
+//	string col;
+//
+//	cout << "Please enter row: ";
+//	getline(is, row);
+//
+//	cout << endl << "Please enter column: ";
+//	getline(is, col);
+//
+//	return board->getSquare(atoi(row.c_str()), atoi(col.c_str()));
 
-	cout << "Please enter row: ";
-	getline(is, row);
+}
 
-	cout << endl << "Please enter column: ";
-	getline(is, col);
-
-	return board->getSquare(atoi(row.c_str()), atoi(col.c_str()));
-
+Chess::~~Chess(){
+	delete[] pieces;
 }

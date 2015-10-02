@@ -23,3 +23,10 @@ void Piece::kill()
 {
 	this->alive = false;
 }
+
+Piece::~Piece(){
+	delete alive;
+	delete[] colour;
+	delete symbol;
+
+}

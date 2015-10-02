@@ -48,3 +48,9 @@ Square* Board::getSquare(int r, int c)
 
 	return toReturn;
 }
+
+Board::~Board(){
+	delete[] squares;
+	delete width;
+	delete height;
+}
