@@ -10,5 +10,6 @@
 int main(){
 	Chess* chess = new Chess();
 	chess->play();
+	delete[] chess;
 	return 0;
 }

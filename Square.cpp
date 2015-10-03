@@ -34,8 +34,6 @@ Piece* Square::removePiece()
 }
 
 Square::~Square(){
-	delete row;
-	delete col;
 	delete[] piece;
 }
 

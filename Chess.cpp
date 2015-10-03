@@ -1,5 +1,5 @@
 #include "Chess.h"
-
+#include <stdlib.h>
 
 
 
@@ -84,21 +84,21 @@ bool Chess::isOver() const
 Square* Chess::getSquare(istream const &is)
 {
 	//TODO: DO NOT output prompts here
-//	string row;
-//	string col;
-//
-//	cout << "Please enter row: ";
-//	getline(is, row);
-//
-//	cout << endl << "Please enter column: ";
-//	getline(is, col);
-//
-//	return board->getSquare(atoi(row.c_str()), atoi(col.c_str()));
+
+	string location;
+	int row, col;
+
+	cout << "Enter location: ";
+	//is >> location;
+
+	row = atoi(location.substr(0,1).c_str());
+	col = atoi(location.substr(2,1).c_str());
+	return board->getSquare(row,col);
 
 }
 
 Chess::~Chess(){
 	for(int i = 0; i < pieces.size(); i++){
-		delete pieces[i];
+		delete pieces.at(i);
 	}
 }

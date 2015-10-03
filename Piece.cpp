@@ -25,8 +25,6 @@ void Piece::kill()
 }
 
 Piece::~Piece(){
-	delete alive;
-	delete[] colour;
-	delete symbol;
 
 }
+

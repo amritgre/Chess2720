@@ -6,6 +6,7 @@ Board::Board(int height, int width)
     this->width = width;
     this->height = height;
 
+    //Loop through and make squares vector of size 36 ie. 6 rows x 6 cols
 	for (int row = 0; row < height; row++) {
 		for (int col = 0; col < width; col++) {
 			Square* tempSqr = new Square(row, col);
@@ -13,16 +14,36 @@ Board::Board(int height, int width)
 		}
     }
 }
-void Board::draw(ostream &o)
 
-{
-    for (int row = 0; row < this -> height; row++) {
-       o << "#";
-       for (int column; column < this -> width; column++) {
-         o << "#";
-         o << endl;
-      }
-    }
+
+void Board::draw(ostream& o){
+
+	o << " "; //the initial empty corner on the top left(check the word file if unclear)
+
+	//Print just the column line
+   for (int col = 1; col < this->width; col++)
+	{
+		o << " " << col;
+	}
+
+	o << endl;//end of the column line and move to rows
+
+	//Prints row 0 to 5
+    for (int row = 1; row < this->height; row++) {
+
+       o << " " << row << " ";//Prints the row num
+
+	  //This loop gets all the things on that line
+		for(int col2 = 0; col2 < this->width; col2++){
+			o << getSquare(row, col2)->symbol() << " ";
+
+		}
+
+	}
+
+	 // goto new row.
+	 o << endl;
+
 }
 
 void Board::placePiece(Piece* p, Square* s)
